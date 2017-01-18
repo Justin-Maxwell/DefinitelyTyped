@@ -10,6 +10,7 @@ interface $script {
   path(p:string): void;
   urlArgs(str:string): void;
   ready(deps:string | string[], ready:() => void, req?:(missing:string[]) => void): $script;
+  done(id:string): void;
 }
 
 declare module 'scriptjs'{ 

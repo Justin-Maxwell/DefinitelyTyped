@@ -24,4 +24,7 @@ function main(): void {
   $script.urlArgs('key=value&foo=bar');
 
   $script.order(['foo.js', 'bar.js'], 'bundle', callback);
+   
+  $script.ready('xyzzy', callback);
+  $script.done('xyzzy');
 }
